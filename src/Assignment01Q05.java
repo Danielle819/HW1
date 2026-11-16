@@ -4,15 +4,13 @@ public class Assignment01Q05 {
         if(m[i][j] == 1) return 1;
 
         int n = m.length;
-        // int[][] prev = new int[n][n];
-        // int[] next = new int[n];
-        // int[] cnt = new int[n];
-
         int head = 0; int tail = 1;
         int[][] Q = new int[n*n][2];
         Q[0][0] = i; Q[0][1] = 0;
+        
         int min = n; int curr; int d;
         boolean found = false;
+        
         while(head != tail){
             curr = Q[head][0];
             d = Q[head][1];
